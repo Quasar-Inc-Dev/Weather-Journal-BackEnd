@@ -106,7 +106,7 @@ app.post('/registros', async (req, res) => {
  
 });
  
-app.get('/registro', async (req, res) => {
+app.get('/registros', async (req, res) => {
     try {
         const registro = await Registros.find();
  
@@ -120,7 +120,7 @@ app.get('/registro', async (req, res) => {
     }
 });
  
-app.patch('/registro', async (req, res) => {
+app.patch('/registros', async (req, res) => {
     try {
         const registro = await Registros.update(req.body);
  
@@ -134,7 +134,7 @@ app.patch('/registro', async (req, res) => {
     }
 });
  
-app.delete('/registro', async (req, res) => {
+app.delete('/registros', async (req, res) => {
     try {
         const registro = await Registros.delete(req.body);
  
