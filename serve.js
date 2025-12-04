@@ -19,7 +19,7 @@ const Usuario = mongoose.model('Usuario', usuarioSchema, 'usuarios');
 const registros = new mongoose.Schema({
     cidade: { type: String, required: true, trim: true, minlenght: 2 },
     estado: { type: String, required: true, trim: true, maxlenght: 2 },
-    data_observacao: { type: string, required: true },
+    data_observacao: { type: String, required: true },
     temperatura_c: { type: Number, required: true },
     condicao: { type: String, required: true, trim: true, minlenght: 2 },
     sensacao_termica: { type: Number, required: true },
